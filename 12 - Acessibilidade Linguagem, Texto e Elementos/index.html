@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<!-- O atributo lang serve para que os mecanismos de leitura e busca identifiquem o idioma da página -->
+<html lang="pt-br">
+    <head>
+        <title>Página Jóia</title>
+        <meta name="description" content="Página super legal e marota"/>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Éde, o Verde"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+
+        <header role="banner">
+            <nav role="navigation" aria-level="main navigation">
+                <ul role="menu">
+                    <li>
+                        <a href="#" role="menuitem">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" role="menuitem">Quem somos</a>
+                    </li>
+                    <li>
+                        <a href="#" role="menuitem">Contato</a>
+                    </li>
+                    <li>
+                        <a href="#" role="menuitem">Conteúdos</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main role="main">
+            <p>
+                Examinem alguns fragmentos de pseudociência e encontrarão um manto de proteção, 
+                um polegar para chupar, algo a que se agarrar. E o que nós oferecemos em troca? 
+                A incerteza, a insegurança! - Asimov
+            </p>
+
+            <!-- o aria-label permite colocar uma descrição para indicar a função do botão -->
+            <button aria-label="Acesse o site para saber mais">Mais...</button>
+
+            <!-- O atributo lang tbm serve pra especificar conteúdos em idioma diferente da página -->
+            <p lang="en">
+                "My advice to everybody would be to go out as much as possible and deal with 
+                social inequality and environmental degradation because these issues are 
+                increasingly prescient." - David Harvey           
+            </p>
+            <p>
+                Examinem alguns fragmentos de pseudociência e encontrarão um manto de proteção, 
+                um polegar para chupar, algo a que se agarrar. E o que nós oferecemos em troca? 
+                A incerteza, a insegurança! - Asimov               
+            </p>
+
+            <!-- labelledby serve pra associar um elemento com uma descrição em outro paragrafo -->
+            <button aria-labelledby="leia">Mais...</button>
+            <p id="leia">Leia Asimov</p>
+
+            <form>
+                <div>
+                    <label for="campo1">Nome</label>
+                    <input type="text" name="nome" id="campo1"/>
+                </div>
+
+                <fieldset>
+                    <label>Pets: </label>
+
+                    <label for="campo31">Catioro</label>
+                    <input type="radio" name="pet" value="1" id="campo31"/>
+
+                    <label for="campo32">Gatíneo</label>
+                    <input type="radio" name="pet" value="2" id="campo32"/>
+
+                    <label for="campo33">Paçáro</label>
+                    <input type="radio" name="pet" value="3" id="campo33"/>
+                </fieldset>
+
+                <div>
+                    <input type="submit" value="Enviar"/>
+                </div>
+            </form> 
+        </main>
+
+        <footer role="contentinfo">
+            &copy; Rodapézão
+        </footer>
+    </body>
+</html>
