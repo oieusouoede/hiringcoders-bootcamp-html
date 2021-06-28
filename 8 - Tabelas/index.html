@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Olar</title>
+        <meta name="description" content="Página super legal e marota"/>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Éde, o Verde"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <!-- Cabeçalho -->
+        <header>
+        </header>
+
+        <!-- conteúdo principal -->
+        <main>
+            <!-- A tag table cria o container principal -->
+
+            <!-- Exemplo 1 -->
+            <table>
+                <!-- thead é o cabeçalho da tabela -->
+                <thead>
+                    <!-- tr cria uma linha de conteúdo -->
+                    <tr>
+                        <!-- th cria uma coluna -->
+                        <th>Mês da atividade</th>
+                        <th>Nome da atividade</th>
+                    </tr>
+                </thead>
+                <!-- tbody é o corpo da tabela -->
+                <tbody>
+                    <tr>
+                        <!-- os itens no corpo da tabela são criados com a tag td -->
+                        <td>Janeiro</td>
+                        <td>Magia e bruxaria</td>
+                    </tr>
+                    <tr>
+                        <td>Fevereiro</td>
+                        <td>Caça ao tesouro</td>
+                    </tr>
+                </tbody>
+                <!-- tfoot é o rodapé da tabela -->
+                <tfoot>
+                    <tr>
+                        <td>Total de atividades</td>
+                        <td><strong>2</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <!-- Exemplo 2 -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mês da atividade</th>
+                        <th>Nome da atividade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- O atributo colspan serve pra mesclar colunas -->
+                        <td colspan="2">Janeiro</td>
+                    </tr>
+                    <tr>
+                        <td>Fevereiro</td>
+                        <!-- O atributo rowspan mescla linhas -->
+                        <td rowspan="2">Caça ao tesouro</td>
+                    </tr>
+                    <tr>
+                        <td>Março</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total de atividades</td>
+                        <td><strong>2</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </main>
+        <!-- Rodapé -->
+        <footer>
+        </footer>
+    </body>
+</html>
