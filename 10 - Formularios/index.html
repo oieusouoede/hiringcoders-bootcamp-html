@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Página Jóia</title>
+        <meta name="description" content="Página super legal e marota"/>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Éde, o Verde"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+    </head>
+    <body>
+        <!-- Cabeçalho -->
+        <header>
+        </header>
+
+        <!-- conteúdo principal -->
+        <main>
+            <!-- Os formulários são criados a partir da tag form -->
+            <!-- O atributo action recebe o link pro backend onde os dados serão tratados -->
+            <!-- O atr method indica qual método de requisição http o formulário vai utilizar -->
+            <form action="#" method="POST">
+                <div>
+                    <!-- A tag label é o título que aparece junto do input -->
+                    <label for="campo1">Nome</label>
+                    <!-- Input é uma tag de entrada, pode ser um campo, um botão, um checkbox etc -->
+                    <!-- o atributo type define o tipo de entrada -->
+                    <!-- A tag name é uma referência ao tipo de informação que aquele input vai receber -->
+                    <!-- Isso serve pra manipular os dados com js por exemplo -->
+                    <input type="text" name="nome" id="campo1"/>
+                    <label>Cores</label>
+                </div>
+
+                <div>
+                    <!-- Usando o atributo for na label e associando com id dentro dos elementos -->
+                    <!-- isso faz com que eu possa clicar na label pra acionar o elemento -->
+                    <label for="campo2">Cores</label>
+                    <!-- a tag select é uma caixa de seleção -->
+                    <select name="cores" id="campo2">
+                        <!-- As opções vem entre as tags e tem um atributo value -->
+                        <option value="1">Azul</option>
+                        <option value="2">Verde</option>
+                        <option value="3">Vermelho</option>
+                    </select>
+                </div>
+
+                <!-- Input do tipo radio -->
+                <fieldset>
+                    <legend>Pets: </legend>
+                    <label for="campo31">Catioro</label>
+                    <input type="radio" name="pet" value="1" id="campo31"/>
+                    <label for="campo32">Gatíneo</label>
+                    <input type="radio" name="pet" value="2" id="campo32"/>
+                    <label for="campo33">Paçáro</label>
+                    <input type="radio" name="pet" value="3" id="campo33"/>
+                </fieldset>
+
+                <fieldset>
+                    <!-- Input do tipo checkbox -->
+                    <label>Planetas: </label>
+                    <label for="campo41">Marte</label>
+                    <input type="checkbox" name="marte" value="1" id="campo41"/>
+                    <label for="campo42">Saturno</label>
+                    <input type="checkbox" name="saturno" value="2" id="campo42"/>
+                    <label for="campo43">Vênus</label>
+                    <input type="checkbox" name="venus" value="3" id="campo43"/>    
+                </fieldset>
+                <div>
+                    <!-- O input do tipo submit cria um botão específico pro envio do formulário -->
+                    <input type="submit" value="Enviar"/>
+                </div>
+            </form>        
+        </main>
+        <!-- Rodapé -->
+        <footer>
+        </footer>
+    </body>
+</html>
