@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Página Jóia</title>
+        <meta name="description" content="Página super legal e marota"/>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Éde, o Verde"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <!-- Cabeçalho -->
+
+        <!-- As especificações ARIA são implementações pra promover acessibilidade em uma página web -->
+        <!-- O atributo role indica o que um elemento é ou faz -->
+        <!-- O atributo aria-selected indica o estado de certos elementos -->
+        <!-- O atributo aria-level indica a hierarquia de uma seção da página -->
+        <!-- Essas implementações não aparecem na páginas. Servem pra leitores de tela interpretarem as informações -->
+
+        <!-- banner pra a parte onde ocorre a navegação inicial da minha página -->
+        <header role="banner">
+            <!-- navigation pra marcar uma seção de navegação -->
+            <nav role="navigation" aria-level="main navigation">
+                <!-- menu pra marcar um menu da página -->
+                <ul role="menu">
+                    <li>
+                        <!-- menuitem pra marcar os itens de um menu -->
+                        <a href="#" role="menuitem">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" role="menuitem">Quem somos</a>
+                    </li>
+                    <li>
+                        <a href="#" role="menuitem">Contato</a>
+                    </li>
+                    <li>
+                        <a href="#" role="menuitem">Conteúdos</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- conteúdo principal -->
+        <!-- main pra marcar o conteúdo principal da página -->
+        <main role="main">
+            <p>
+                Examinem alguns fragmentos de pseudociência e encontrarão um manto de proteção, 
+                um polegar para chupar, algo a que se agarrar. E o que nós oferecemos em troca? 
+                A incerteza, a insegurança! - Asimov
+            </p>
+            <p>
+                Examinem alguns fragmentos de pseudociência e encontrarão um manto de proteção, 
+                um polegar para chupar, algo a que se agarrar. E o que nós oferecemos em troca? 
+                A incerteza, a insegurança! - Asimov            
+            </p>
+            <p>
+                Examinem alguns fragmentos de pseudociência e encontrarão um manto de proteção, 
+                um polegar para chupar, algo a que se agarrar. E o que nós oferecemos em troca? 
+                A incerteza, a insegurança! - Asimov               
+            </p>
+
+            <form>
+                <div>
+                    <label for="campo1">Nome</label>
+                    <input type="text" name="nome" id="campo1"/>
+                </div>
+
+                <!-- Input do tipo radio -->
+                <fieldset>
+                    <label>Pets: </label>
+
+                    <label for="campo31">Catioro</label>
+                    <input type="radio" name="pet" value="1" id="campo31"/>
+
+                    <label for="campo32">Gatíneo</label>
+                    <input type="radio" name="pet" value="2" id="campo32"/>
+
+                    <label for="campo33">Paçáro</label>
+                    <input type="radio" name="pet" value="3" id="campo33"/>
+                </fieldset>
+
+                <div>
+                    <input type="submit" value="Enviar"/>
+                </div>
+            </form> 
+        </main>
+
+        <!-- Rodapé -->
+        <!-- Contentinfo geralmente se usa pra informações de direitos autorais ou links úteis -->
+        <footer role="contentinfo">
+            &copy; Rodapézão
+        </footer>
+    </body>
+</html>
