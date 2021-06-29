@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Olar</title>
+        <meta name="description" content="Página super legal e marota"/>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Éde, o Verde"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <!-- Cabeçalho -->
+        <header>
+        </header>
+
+        <!-- conteúdo principal -->
+        <main>
+            <!-- O atributo summary define um resumo do que se trata a tabela -->
+            <table summary="Lista de atividades mensais">
+            <!-- caption adiciona um título ou descrição pra minha tabela -->
+            <caption>Tabela 1: atividades por mês</caption>
+                <thead>
+                    <tr>
+                        <!-- O atributo abbr abrevia o título pra facilitar a repodução de leitores de tela -->
+                        <th abbr="Mês" scope="col">Mês da atividade</th>
+                        <!-- O atributo scope auxilia o leitor de tela a organizar os elementos da tabela -->
+                        <th abbr="Atividade" scope="col">Nome da atividade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">Janeiro</td>
+                        <td scope="row">Magia e bruxaria</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Fevereiro</td>
+                        <td scope="row">Caça ao tesouro</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total de atividades</td>
+                        <td><strong>2</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </main>
+        <!-- Rodapé -->
+        <footer>
+        </footer>
+    </body>
+</html>
